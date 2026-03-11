@@ -5,3 +5,4 @@
 |Luciano|Correa Pol|https://github.com/luciano-correapol|2613748619|
 |Tomás|Cabrera|https://github.com/tomascabrera1453-spec|2614191579|
 |Tomás|Vera|linktomi|wsptomi|
+|Enzo|Scala|https://github.com/enzoscala431-cloud|2615327651|
