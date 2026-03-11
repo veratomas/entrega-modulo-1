@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#07080f"/>
+      <stop offset="100%" style="stop-color:#0d1b3e"/>
+    </linearGradient>
+
+    <linearGradient id="glyphGrad" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0f0ff"/>
+      <stop offset="55%" style="stop-color:#60aaff"/>
+      <stop offset="100%" style="stop-color:#1a56db"/>
+    </linearGradient>
+
+    <linearGradient id="riseGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a56db;stop-opacity:0"/>
+      <stop offset="100%" style="stop-color:#60aaff;stop-opacity:0.7"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="circ">
+      <circle cx="100" cy="100" r="90"/>
+    </clipPath>
+  </defs>
+
+  <!-- Fondo -->
+  <circle cx="100" cy="100" r="100" fill="url(#bgGrad)"/>
+
+  <!-- Anillo exterior limpio (honestidad: contorno claro) -->
+  <circle cx="100" cy="100" r="93" fill="none" stroke="#3a86ff" stroke-width="1" opacity="0.4"/>
+
+  <!-- Líneas de cuadrícula (innovación / precisión técnica) -->
+  <g clip-path="url(#circ)" stroke="#3a86ff" stroke-width="0.4" opacity="0.1">
+    <line x1="10" y1="50"  x2="190" y2="50"/>
+    <line x1="10" y1="75"  x2="190" y2="75"/>
+    <line x1="10" y1="100" x2="190" y2="100"/>
+    <line x1="10" y1="125" x2="190" y2="125"/>
+    <line x1="10" y1="150" x2="190" y2="150"/>
+    <line x1="50"  y1="10" x2="50"  y2="190"/>
+    <line x1="75"  y1="10" x2="75"  y2="190"/>
+    <line x1="100" y1="10" x2="100" y2="190"/>
+    <line x1="125" y1="10" x2="125" y2="190"/>
+    <line x1="150" y1="10" x2="150" y2="190"/>
+  </g>
+
+  <!-- Triángulo ascendente (ambición: apuntar hacia arriba) -->
+  <polygon
+    points="100,22 162,150 38,150"
+    fill="none"
+    stroke="url(#riseGrad)"
+    stroke-width="1"
+    opacity="0.45"
+    clip-path="url(#circ)"
+  />
+
+  <!-- Halo difuso detrás del símbolo -->
+  <circle cx="100" cy="95" r="44" fill="#1a56db" opacity="0.08" filter="url(#softglow)"/>
+
+  <!-- Símbolo ℵ usando texto Unicode con fuente serif para fidelidad -->
+  <text
+    x="100"
+    y="125"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="90"
+    font-weight="400"
+    fill="url(#glyphGrad)"
+    filter="url(#glow)"
+    clip-path="url(#circ)"
+  >ℵ</text>
+
+  <!-- Línea base (honestidad: fundamento sólido, nada oculto) -->
+  <line x1="48" y1="151" x2="152" y2="151" stroke="#3a86ff" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- Nombre del proyecto -->
+  <text
+    x="100" y="170"
+    text-anchor="middle"
+    font-family="'Courier New', monospace"
+    font-size="13"
+    font-weight="700"
+    letter-spacing="5.5"
+    fill="#7ec8e3"
+    opacity="0.9"
+  >ALEPH</text>
+
+  <!-- Tagline -->
+  <text
+    x="100" y="182"
+    text-anchor="middle"
+    font-family="'Courier New', monospace"
+    font-size="5"
+    letter-spacing="2"
+    fill="#3a86ff"
+    opacity="0.5"
+  >INFINITY STARTS HERE</text>
+</svg>
