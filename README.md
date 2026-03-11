@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="aleph-logo.svg" alt="Aleph Logo" width="200" height="200"/>
+</div>
+
 # Técnicas y Herramientas Modernas
 ## Perfiles de Github de los integrantes:
 - Luciano Correa Pol: <https://github.com/luciano-correapol/T-cnicas-y-herramientas-modernas>
