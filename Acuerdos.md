@@ -1,5 +1,3 @@
----
-
 ## 🤝 Acuerdos del Grupo Aleph
 
 Para que el proyecto avance bien, nos pusimos estas reglas:
