@@ -2,7 +2,7 @@
   <img src="aleph-logo.svg" alt="Aleph Logo" width="200" height="200"/>
   
   # Técnicas y Herramientas Modernas
-  ### ⚙️ Grupo Aleph - Módulo 1
+  ### ⚙️ Grupo Aleph
 </div>
 
 ---
